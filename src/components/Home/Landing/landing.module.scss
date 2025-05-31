@@ -1,0 +1,66 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  height: calc(100lvh);
+  background-color: #ddeeff;
+
+  .landingWrapper {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .textContainer {
+      h2 {
+        color: #333;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 70px;
+      }
+
+      p {
+        color: #333;
+        font-size: 32px;
+        margin-top: 24px;
+        width: 670px;
+        font-weight: 300;
+        line-height: 42px;
+      }
+    }
+
+    .buttonContainer {
+      margin-top: 28px;
+      border: 1px solid #05f;
+      border-radius: 26px;
+      background-color: #05f;
+      cursor: pointer;
+      padding: 14px 40px;
+      text-align: center;
+      transition: all 0.2s;
+      width: fit-content;
+
+      &:hover {
+        filter: opacity(80%);
+      }
+
+      .button {
+        font-family: "Centra Bold";
+        background-color: #05f;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        gap: 18px;
+      }
+    }
+
+    .benefitContainer {
+        display: flex;
+        gap: 15px;
+        margin-top: 60px;
+    }
+  }
+}
