@@ -1,0 +1,111 @@
+.footer {
+    width: 100%;
+    height: 100vh;
+    background-color: #111547;
+    display: flex;
+    justify-content: center;
+    padding: 4.5rem 0;
+    color: #fff;
+    font-size: 14px;
+
+    .mainWrapper {
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+
+        .firstColumn {
+            display: flex;
+            flex-direction: column;
+            margin-right: 170px;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 17px;
+                    font-size: 14px;
+                    font-family: "Centra Bold";
+                }
+            }
+        }
+
+        .thirdColumn {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 17px;
+                    font-size: 14px;
+                    font-family: "Centra Bold";
+                }
+            }
+
+            .middle {
+                display: flex;
+                flex-direction: column;
+                margin-top: 4.5rem;
+
+                h2 {
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-family: "Centra Bold";
+                }
+            }
+        }
+
+        .fourthColumn {
+            display: flex;
+            flex-direction: column;
+            .middle {
+                display: flex;
+                flex-direction: column;
+                margin-top: 12.6rem;
+
+                h2 {
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-family: "Centra Bold";
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 14px;
+    font-weight: 600;
+
+    &:hover {
+        color: #05f;
+    }
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-weight: 600;
+}
+
+h4 {
+    margin: 12px 0 5px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
