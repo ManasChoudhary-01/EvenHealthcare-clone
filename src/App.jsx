@@ -1,10 +1,15 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from "./components/Home/Home.jsx";
 
 function App() {
 
   return (
     <>
-      <h1>Even Project</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
