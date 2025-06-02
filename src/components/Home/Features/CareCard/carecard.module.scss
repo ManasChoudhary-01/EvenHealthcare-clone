@@ -1,0 +1,45 @@
+.card {
+    border: 1px solid #666;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    transition: border-color .8s cubic-bezier(.25, .46, .45, .94);
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        border: 1px solid #fff;
+        box-shadow: 0 0 0 1px #fff;
+    }
+
+    .video {
+        height: 170px;
+        width: 170px;
+
+        video {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+
+    .content {
+        color: #bbb;
+        font-size: 14px;
+    }
+}

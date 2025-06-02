@@ -4,6 +4,7 @@ import styles from "./home.module.scss";
 import Navbar from "./Navbar/Navbar";
 import Landing from "./Landing/Landing";
 import Plans from "./Plans/Plans";
+import Features from "./Features/Features";
 import Footer from "../Footer/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </section>
       <Landing />
       <Plans />
+      <Features />
       <Footer />
     </div>
   );

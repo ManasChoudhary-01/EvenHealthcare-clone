@@ -1,12 +1,13 @@
 .plans {
     width: 100%;
-    height: 200vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     background-color: #fff;
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 
     .topContainer {
         width: 1120px;
@@ -32,6 +33,78 @@
 
                 &:hover {
                     filter: grayscale(0%);
+                }
+            }
+        }
+    }
+
+    .bottomContainer {
+        margin-top: 60px;
+        width: 1100px;
+        height: 208px;
+        background: #111547;
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        .background {
+            position: absolute;
+            left: 90px;
+            top: 60px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 120px;
+            top: 70px;
+
+            h2 {
+                color: #fff;
+                font-size: 30px;
+                line-height: 1.4;
+                margin-bottom: 7px;
+                font-family: "Centra Bold";
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: "Centra Bold";
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 110px;
+            top: 88px;
+            z-index: 1;
+
+            a {
+                text-decoration: none;
+
+                button {
+                    font-family: "Centra Bold";
+                    align-items: center;
+                    background: #05f;
+                    border: none;
+                    border-radius: 85px;
+                    color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    display: inline-flex;
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 48px;
+                    justify-content: center;
+                    padding: 0 25px;
+
+                    svg  {
+                        margin-left: 10px;
+                    }
                 }
             }
         }
