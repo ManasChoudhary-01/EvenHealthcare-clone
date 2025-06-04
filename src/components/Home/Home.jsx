@@ -5,6 +5,7 @@ import Navbar from "./Navbar/Navbar";
 import Landing from "./Landing/Landing";
 import Plans from "./Plans/Plans";
 import Features from "./Features/Features";
+import Connect from "./Connect/Connect";
 import Footer from "../Footer/Footer";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Landing />
       <Plans />
       <Features />
+      <Connect />
       <Footer />
     </div>
   );
