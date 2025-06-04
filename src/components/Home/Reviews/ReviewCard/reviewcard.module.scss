@@ -1,0 +1,44 @@
+.reviewCard {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 16px;
+    margin-right: 12px;
+    padding: 20px 15px 20px 15px;
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .stars {
+            min-width: 85px;
+            text-align: left;
+        }
+
+        .date {
+            color: #999;
+            font-size: 14px;
+        }
+    }
+
+    .review {
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        line-height: 1.5715;
+    }
+
+    .name {
+        color: #333;
+        font-size: 14px;
+        font-family: "Centra Medium";
+    }
+}

@@ -1,0 +1,63 @@
+.reviews {
+    height: fit-content;
+    width: 100%;
+    background-color: #def;
+    padding-bottom: 60px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+
+
+    .wrapper {
+        width: 1232px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-weight: 700;
+            color: #333;
+            font-size: 28px;
+            font-family: "Centra Medium";
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .reviewsContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            :nth-child(6) {
+                transform: translateY(-70px);
+            }
+        }
+
+        button {
+            font-family: "Centra Bold";
+            align-items: center;
+            background: #05f;
+            border: none;
+            border-radius: 85px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            display: inline-flex;
+            font-size: 16px;
+            font-weight: 700;
+            height: 48px;
+            justify-content: center;
+            padding: 7px 40px;
+            transition: all 0.2s;
+
+            &:hover {
+                filter: opacity(80%);
+            }
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import styles from "./home.module.scss";
 import Navbar from "./Navbar/Navbar";
 import Landing from "./Landing/Landing";
 import Plans from "./Plans/Plans";
+import Reviews from "./Reviews/Reviews";
 import Features from "./Features/Features";
 import Network from "./Network/Network";
 import Experience from "./Experience/Experience";
@@ -19,6 +20,7 @@ export default function Home() {
       </section>
       <Landing />
       <Plans />
+      <Reviews />
       <Features />
       <Network />
       <Experience />
