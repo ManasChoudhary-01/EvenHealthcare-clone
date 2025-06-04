@@ -45,6 +45,11 @@
             display: flex;
             gap: 18px;
             cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                filter: opacity(80%);
+            }
         }
     }
 }
