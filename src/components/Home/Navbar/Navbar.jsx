@@ -1,9 +1,25 @@
-import React from "react";
+import React, {useState, useEffect, use} from "react";
 import styles from "./navbar.module.scss";
 
 export default function Navbar({ color }) {
+  
+  const [background, setBackground] = useState(color);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setBackground("#fff");
+      } else {
+        setBackground(color);
+      }
+    };
+    window.addEventListener("scroll" ,handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [color])
   return (
-    <div className={styles.navbar} style={{ backgroundColor: color }}>
+    <div className={styles.navbar} style={{ backgroundColor: background }}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <svg width="73" height="26" viewBox="0 0 73 26" fill="none">
