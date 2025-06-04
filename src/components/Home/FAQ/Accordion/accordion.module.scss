@@ -1,0 +1,33 @@
+.accordion {
+    border-bottom: 1px solid #eee;
+    padding: 0px 40px;
+    padding-bottom: 20px;
+
+    .qsContainer {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        h3 {
+            font-size: 16px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        span {
+            transition: transform .1s ease-in-out;
+        }
+    }
+
+    .ansContainer {
+        margin-top: 10px;
+        margin-right: 1.72rem;
+
+        h3 {
+            font-size: 16px;
+            color: #333;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+    }
+}
