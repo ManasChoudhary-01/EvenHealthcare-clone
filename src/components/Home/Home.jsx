@@ -6,6 +6,7 @@ import Landing from "./Landing/Landing";
 import Plans from "./Plans/Plans";
 import Features from "./Features/Features";
 import Network from "./Network/Network";
+import Experience from "./Experience/Experience";
 import FAQ from "./FAQ/FAQ";
 import Connect from "./Connect/Connect";
 import Footer from "../Footer/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
       <Plans />
       <Features />
       <Network />
+      <Experience />
       <FAQ />
       <Connect />
       <Footer />
