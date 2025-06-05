@@ -1,0 +1,46 @@
+.planModule {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    // padding: 10px 4px 10px 0;
+
+    .description {
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        width: 50%;
+        // border: 2px solid black;
+
+        img {
+            height: 27px;
+            width: 111.5px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #333;
+        }
+    }
+
+    .plus , .essential, .care {
+        width: calc(50% / 3);
+        text-align: center;
+        padding-top: calc(27px);
+    }
+
+    .plus {
+        background: #F5F6F8;
+        border-right: .5px solid #eee;
+        border-bottom: .5px solid #eee;
+    }
+
+    .essential{
+        background: #f9f9f9;
+        border-right: .5px solid #eee;
+        border-bottom: .5px solid #eee;
+    }
+
+    .care {
+        background: #f9f9f9;
+    }
+}
