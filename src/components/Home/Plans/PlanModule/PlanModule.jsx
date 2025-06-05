@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./planModule.module.scss";
+import styles from "./planmodule.module.scss";
 
 export default function PlanModule({img, desc, plus, essential, care}) {
 
