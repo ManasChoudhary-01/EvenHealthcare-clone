@@ -7,7 +7,7 @@
         background-color: #febacd;
         border-radius: 60px;
         padding-bottom: 120px;
-        padding-top: 100px;
+        padding-top: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,7 +24,47 @@
         .networkcardContainer {
             margin-top: 20px;
             display: flex;
+            justify-content: center;
             gap: 80px;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .network {
+
+        .wrapper {
+
+            .networkcardContainer {
+                gap: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .network {
+
+        .wrapper {
+            border-radius: 0;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            .networkcardContainer {
+                gap: 40px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     }
 }
