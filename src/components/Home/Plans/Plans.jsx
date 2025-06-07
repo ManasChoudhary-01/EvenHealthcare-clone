@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from './plans.module.scss'
 
 import ET from "../../../assets/Homepage/Plans/ET.png";
@@ -15,6 +15,15 @@ import twentySeven from "../../../assets/Homepage/Plans/twentySeven.svg";
 import PlanModule from './PlanModule/PlanModule';
 
 export default function Plans() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 700);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className={styles.plans}>
             <div className={styles.topContainer}>
@@ -104,14 +113,14 @@ export default function Plans() {
                         <div className={styles.col1Title}>Price</div>
                         <div className={styles.col2Title}>
                             <p>As low as</p>
-                            <p>₹<span>896</span>/month</p></div>
+                            <p>₹<span>896</span>/{isMobile ? "m" : "month"}</p></div>
                         <div className={styles.col3Title}>
                             <p>As low as</p>
-                            <p>₹<span>690</span>/month</p>
+                            <p>₹<span>690</span>/{isMobile ? "m" : "month"}</p>
                         </div>
                         <div className={styles.col4Title}>
                             <p>As low as</p>
-                            <p>₹<span>400</span>/month</p>
+                            <p>₹<span>400</span>/{isMobile ? "m" : "month"}</p>
                         </div>
                     </div>
                 </div>
