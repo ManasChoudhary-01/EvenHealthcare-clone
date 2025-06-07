@@ -7,7 +7,7 @@ export default function Reviews() {
     <div className={styles.reviews}>
       <div className={styles.wrapper}>
         <h2>
-          Real reviews from real members{" "}
+          Real reviews from real members
           <svg width="45" height="58" viewBox="0 0 45 58" fill="none">
             <path
               fill-rule="evenodd"
