@@ -64,6 +64,10 @@
             width: 350px;
             height: auto;
 
+            @media(max-width: 1060px) {
+                display: none;
+            }
+
             img {
                 height: 100%;
                 width: 100%;
@@ -76,6 +80,10 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+            @media(max-width: 1200px) {
+                display: none;
+            }
 
             .circle {
                 background-color: #fbe277;
@@ -107,9 +115,83 @@
             gap: 52px;
             transform: translateX(-30px);
 
+            @media(max-width: 1200px) {
+                transform: translateX(0px);
+            }
+
             .row {
                 display: flex;
                 gap: 36px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .firstContainer {
+
+        .wrapper {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .cardsContainer {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 22px;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .firstContainer {
+        padding: 60px 0;
+
+        .wrapper {
+            width: 100%;
+            padding: 0 20px;
+            align-items: flex-start;
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+
+            .cardsContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+    }
+
+    .secondContainer {
+        padding: 60px 20px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .wrapper {
+            display: flex;
+            margin-top: 40px;
+
+            .doctorsConatiner {
+                gap: 36px;
+            
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 36px;
+                }
             }
         }
     }
