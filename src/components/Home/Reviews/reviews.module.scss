@@ -17,7 +17,7 @@
         h2 {
             font-weight: 700;
             color: #333;
-            font-size: 28px;
+            font-size: 32px;
             font-family: "Centra Medium";
             text-align: center;
             margin-bottom: 50px;
@@ -57,6 +57,52 @@
 
             svg {
                 margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .reviews {
+        padding: 50px 0px;
+
+
+        .wrapper {
+            width: calc(100% - 40px);
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 50px;
+            }
+
+            .reviewsContainer {
+                row-gap: 20px;
+                column-gap: 16px;
+
+                :nth-child(6) {
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .reviews {
+
+        .wrapper {
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 50px;
+
+                svg {
+                    display: none;
+                }
+            }
+
+            button {
+                margin-top: 45px;
             }
         }
     }

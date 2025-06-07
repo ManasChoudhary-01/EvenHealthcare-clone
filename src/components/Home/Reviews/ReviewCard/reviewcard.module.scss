@@ -42,3 +42,10 @@
         font-family: "Centra Medium";
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .reviewCard {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
