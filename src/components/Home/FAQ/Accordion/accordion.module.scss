@@ -31,3 +31,15 @@
         }
     }
 }
+
+@media(max-width: 1000px) {
+    .accordion {
+        padding: 0px 0px;
+        padding-bottom: 10px;
+
+        .ansContainer {
+            margin-top: 10px;
+            margin-right: 0.8rem;
+        }
+    }
+}
